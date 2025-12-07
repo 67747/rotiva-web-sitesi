@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Rotiva – Oteller</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Rotiva</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="oi oi-menu"></span> Menu
+      </button>
+
+      <div class="collapse navbar-collapse" id="ftco-nav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a href="index.html" class="nav-link">Anasayfa</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">Hakkımızda</a></li>
+          <li class="nav-item"><a href="tour.html" class="nav-link">Turlar</a></li>
+          <li class="nav-item active"><a href="hotel.html" class="nav-link">Oteller</a></li>
+		  <li class="nav-item"><a href="duyurular.html" class="nav-link">Duyurular</a></li>
+          <li class="nav-item"><a href="blog.html" class="nav-link">Gezi Yazıları</a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">İletişim</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+    
+    <div class="hero-wrap js-fullheight" style="background-image: url('images/bg_2.jpg');">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center" data-scrollax-parent="true">
+          <div class="col-md-9 ftco-animate text-center" data-scrollax=" properties: { translateY: '70%' }">
+            <p class="breadcrumbs" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }"><span class="mr-2"><a href="index.html">Anasayfa</a></span> <span>Oteller</span></p>
+            <h1 class="mb-3 bread" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Rotiva Otelleri</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <section class="ftco-section ftco-degree-bg">
+      <div class="container">
+        <div class="row">
+        	<div class="col-lg-3 sidebar">
+        		<div class="sidebar-wrap bg-light ftco-animate">
+        			<h3 class="heading mb-4">Şehir Bul</h3>
+        			<form action="#">
+        				<div class="fields">
+		              <div class="form-group">
+		                <input type="text" class="form-control" placeholder="Gidilecek Yer, Şehir">
+		              </div>
+		              <div class="form-group">
+		                <div class="select-wrap one-third">
+	                    <div class="icon"><span class="ion-ios-arrow-down"></span></div>
+	                    <select name="" id="" class="form-control" placeholder="Konum Seçin">
+	                      <option value="">Konum Seçin</option>
+	                      <option value="">İstanbul</option>
+	                      <option value="">Antalya</option>
+	                      <option value="">Kapadokya</option>
+	                      <option value="">Alaçatı</option>
+						  <option value="">Trabzon</option>
+						  <option value="">Bursa</option>   
+	                    </select>
+	                  </div>
+		              </div>
+		              <div class="form-group">
+		                <input type="text" id="checkin_date" class="form-control" placeholder="Gidiş Tarihi">
+		              </div>
+		              <div class="form-group">
+		                <input type="text" id="checkin_date" class="form-control" placeholder="Dönüş Tarihi">
+		              </div>
+		              <div class="form-group">
+		              	<div class="range-slider">
+		              		<span>
+										    <input type="number" value="25000" min="0" max="25000"/>	-
+										    <input type="number" value="50000" min="0" max="25000"/>
+										  </span>
+										  <input value="3000" min="0" max="20000" step="250" type="range"/>
+										  <input value="10000" min="0" max="20000" step="250" type="range"/>
+										  </svg>
+										</div>
+		              </div>
+		              <div class="form-group">
+		                <input type="submit" value="Otelleri Ara" class="btn btn-primary py-3 px-5">
+		              </div>
+		            </div>
+	            </form>
+        		</div>
+        		<div class="sidebar-wrap bg-light ftco-animate">
+        			<h3 class="heading mb-4">Puan</h3>
+        			<form method="post" class="star-rating">
+							  <div class="form-check">
+									<input type="checkbox" class="form-check-input" id="exampleCheck1">
+									<label class="form-check-label" for="exampleCheck1">
+										<p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i></span></p>
+									</label>
+							  </div>
+							  <div class="form-check">
+						      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+						      <label class="form-check-label" for="exampleCheck1">
+						    	   <p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-o"></i></span></p>
+						      </label>
+							  </div>
+							  <div class="form-check">
+						      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+						      <label class="form-check-label" for="exampleCheck1">
+						      	<p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-o"></i><i class="icon-star-o"></i></span></p>
+						     </label>
+							  </div>
+							  <div class="form-check">
+							    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+						      <label class="form-check-label" for="exampleCheck1">
+						      	<p class="rate"><span><i class="icon-star"></i><i class="icon-star"></i><i class="icon-star-o"></i><i class="icon-star-o"></i><i class="icon-star-o"></i></span></p>
+						      </label>
+							  </div>
+							  <div class="form-check">
+						      <input type="checkbox" class="form-check-input" id="exampleCheck1">
+						      <label class="form-check-label" for="exampleCheck1">
+						      	<p class="rate"><span><i class="icon-star"></i><i class="icon-star-o"></i><i class="icon-star-o"></i><i class="icon-star-o"></i><i class="icon-star-o"></i></span></p>
+							    </label>
+							  </div>
+							</form>
+        		</div>
+          </div>
+          <div class="col-lg-9">
+          	<div class="row">
+          		<div class="col-md-4 ftco-animate">
+		    				<div class="destination">
+		    					<a href="hotel-istanbul-city.html" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/hotel-istanbul.jpg);">
+		    						<div class="icon d-flex justify-content-center align-items-center">
+    							<span class="icon-search2"></span>
+    						</div>
+		    					</a>
+		    					<div class="text p-3">
+		    						<div class="d-flex">
+		    							<div class="one">
+				    						<h3><a href="hotel-istanbul-city.html">İstanbul City Hotel</a></h3>
+				    						<p class="rate">
+				    							<i class="icon-star"></i>
+				    							<i class="icon-star"></i>
+				    							<i class="icon-star"></i>
+				    							<i class="icon-star"></i>
+				    							<i class="icon-star-o"></i>
+				    							<span>4.8 Puan</span>
+				    						</p>
+			    						</div>
+			    						<div class="two">
+			    							<span class="price per-price">3000 TL<br><small>/gece</small></span>
+		    							</div>
+		    						</div>
+		    						<p>Şehrin merkezinde konforlu ve modern bir konaklama deneyimi sunar.</p>
+		    						<hr>
+		    						<p class="bottom-area d-flex">
+		    							<span><i class="icon-map-o"></i> İstanbul </span> 
+		    							<span class="ml-auto"><a href="hotel-istanbul-city.html">İncele</a></span>
+		    						</p>
+		    					</div>
+		    				</div>
+		    			</div>
+		    			<div class="col-md-4 ftco-animate">
+		    				<div class="destination">
+		    					<a href="hotel-sueno-belek.html" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/hotel-belek.jpg);">
+		    						<div class="icon d-flex justify-content-center align-items-center">
+    							<span class="icon-search2"></span>
+    						</div>
+		    					</a>
+		    					<div class="text p-3">
+		    						<div class="d-flex">
+		    							<div class="one">
+				    						<h3><a href="hotel-sueno-belek.html">Sueno Hotels Deluxe Belek</a></h3>
+				    						<p class="rate">
+				    							<i class="icon-star"></i>
+				    							<i class="icon-star"></i>
+				    							<i class="icon-star"></i>
+				    							<i class="icon-star"></i>
+				    							<i class="icon-star-o"></i>
+				    							<span>4.5 Puan</span>
+				    						</p>
+			    						</div>
+			    						<div class="two">
+			    							<span class="price per-price">8000 TL<br><small>/gece</small></span>
+		    							</div>
+		    						</div>
+		    						<p>Her şey dahil konseptiyle deniz, kum ve güneşin tadını çıkarın.</p>
+		    						<hr>
+		    						<p class="bottom-area d-flex">
+		    							<span><i class="icon-map-o"></i>Belek, Antalya</span> 
+		    							<span class="ml-auto"><a href="hotel-sueno-belek.html">İncele</a></span>
+		    						</p>
+		    					</div>
+		    				</div>
+		    			</div>
+		    			<div class="col-md-4 ftco-animate">
+		    				<div class="destination">
+		    					<a href="hotel-kapadokya-magara.html" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/kapadokya-1.jpg);">
+		    						<div class="icon d-flex justify-content-center align-items-center">
+    							<span class="icon-search2"></span>
+    						</div>
+		    					</a>
+		    					<div class="text p-3">
+		    						<div class="d-flex">
+		    							<div class="one">
+				    						<h3><a href="hotel-kapadokya-magara.html">Kapadokya Mağara Otel</a></h3>
+				    						<p class="rate">
+				    							<i class="icon-star"></i>
+				    							<i class="icon-star"></i>
+				    							<i class="icon-star"></i>
+				    							<i class="icon-star"></i>
+				    							<i class="icon-star-o"></i>
+				    							<span>5.0 Puan</span>
+				    						</p>
+			    						</div>
+			    						<div class="two">
+			    							<span class="price per-price">3000 TL<br><small>/gece</small></span>
+		    							</div>
+		    						</div>
+		    						<p>Bölgeye özgü mağara odalarda eşsiz bir Kapadokya deneyimi yaşayın.</p>
+		    						<hr>
+		    						<p class="bottom-area d-flex">
+		    							<span><i class="icon-map-o"></i> Kapadokya, Nevşehir</span> 
+		    							<span class="ml-auto"><a href="hotel-kapadokya-magara.html">İncele</a></span>
+		    						</p>
+		    					</div>
+		    				</div>
+		    			</div>
+		    			<div class="col-md-4 ftco-animate">
+		    				<div class="destination">
+		    					<a href="hotel-ege-butik.html" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/butik-otel.jpg);">
+		    						<div class="icon d-flex justify-content-center align-items-center">
+    							<span class="icon-search2"></span>
+    						</div>
+		    					</a>
+		    					<div class="text p-3">
+		    						<div class="d-flex">
+		    							<div class="one">
+				    						<h3><a href="hotel-ege-butik.html">Ege Butik Otel</a></h3>
+				    						<p class="rate">
+				    							<i class="icon-star"></i>
+				    							<i class="icon-star"></i>
+				    							<i class="icon-star"></i>
+				    							<i class="icon-star"></i>
+				    							<i class="icon-star-o"></i>
+				    							<span>4.2 Puan</span>
+				    						</p>
+			    						</div>
+			    						<div class="two">
+			    							<span class="price per-price">4000 TL<br><small>/gece</small></span>
+		    							</div>
+		    						</div>
+		    						<p>Alaçatı sokaklarına yürüme mesafesinde şirin ve sıcak bir konaklama deneyimi.</p>
+		    						<hr>
+		    						<p class="bottom-area d-flex">
+		    							<span><i class="icon-map-o"></i> Alaçatı, İzmir</span> 
+		    							<span class="ml-auto"><a href="hotel-ege-butik.html">İncele</a></span>
+		    						</p>
+		    					</div>
+		    				</div>
+		    			</div>
+		    			<div class="col-md-4 ftco-animate">
+		    				<div class="destination">
+		    					<a href="trabzon-uzungol-resort-hotel.html" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/uzungol-otel.jpg);">
+		    						<div class="icon d-flex justify-content-center align-items-center">
+    							<span class="icon-search2"></span>
+    						</div>
+		    					</a>
+		    					<div class="text p-3">
+		    						<div class="d-flex">
+		    							<div class="one">
+				    						<h3><a href="trabzon-uzungol-resort-hotel.html">Trabzon Uzungöl Resort Hotel</a></h3>
+				    						<p class="rate">
+				    							<i class="icon-star"></i>
+				    							<i class="icon-star"></i>
+				    							<i class="icon-star"></i>
+				    							<i class="icon-star"></i>
+				    							<i class="icon-star-o"></i>
+				    							<span>4.7 Puan</span>
+				    						</p>
+			    						</div>
+			    						<div class="two">
+			    							<span class="price per-price"> 2500 TL<br><small>/gece</small></span>
+		    							</div>
+		    						</div>
+		    						<p>Uzungöl manzaralı odalarıyla doğayla iç içe huzurlu bir konaklama sunar.</p>
+		    						<hr>
+		    						<p class="bottom-area d-flex">
+		    							<span><i class="icon-map-o"></i> Trabzon</span> 
+		    							<span class="ml-auto"><a href="trabzon-uzungol-resort-hotel.html">İncele</a></span>
+		    						</p>
+		    					</div>
+		    				</div>
+		    			</div>
+		    			<div class="col-md-4 ftco-animate">
+		    				<div class="destination">
+		    					<a href="hotel-bursa-uludag.html" class="img img-2 d-flex justify-content-center align-items-center" style="background-image: url(images/uludag-otel.jpg);">
+		    						<div class="icon d-flex justify-content-center align-items-center">
+    							<span class="icon-search2"></span>
+    						</div>
+		    					</a>
+		    					<div class="text p-3">
+		    						<div class="d-flex">
+		    							<div class="one">
+				    						<h3><a href="hotel-bursa-uludag.html">Bursa Uludağ Mountain Hotel</a></h3>
+				    						<p class="rate">
+				    							<i class="icon-star"></i>
+				    							<i class="icon-star"></i>
+				    							<i class="icon-star"></i>
+				    							<i class="icon-star"></i>
+				    							<i class="icon-star-o"></i>
+				    							<span>4.6 Puan</span>
+				    						</p>
+			    						</div>
+			    						<div class="two">
+			    							<span class="price per-price">5000 TL<br><small>/gece</small></span>
+		    							</div>
+		    						</div>
+		    						<p>Uludağ’ın temiz havası ve eşsiz manzarasıyla konforlu bir konaklama deneyimi sunar.</p>
+		    						<hr>
+		    						<p class="bottom-area d-flex">
+		    							<span><i class="icon-map-o"></i> Bursa</span> 
+		    							<span class="ml-auto"><a href="hotel-bursa-uludag.html">İncele</a></span>
+		    						</p>
+		    					</div>
+		    				</div>
+		    			</div>
+          	</div>
+          	<div class="row mt-5">
+		          <div class="col text-center">
+		            <div class="block-27">
+		              <ul>
+		                <li><a href="#">&lt;</a></li>
+		                <li class="active"><span>1</span></li>
+		                <li><a href="#">2</a></li>
+		                <li><a href="#">3</a></li>
+		                <li><a href="#">4</a></li>
+		                <li><a href="#">5</a></li>
+		                <li><a href="#">&gt;</a></li>
+		              </ul>
+		            </div>
+		          </div>
+		        </div>
+          </div> 
+        </div>
+      </div>
+    </section> 
+
+    <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Rotiva</h2>
+              <p>Türkiye’nin dört bir yanındaki şehirleri, otelleri ve rotaları keşfetmen için yanındayız. Hayalindeki tatili planlamayı kolaylaştırıyoruz.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">Bilgiler</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">Hakkımızda</a></li>
+                <li><a href="#" class="py-2 d-block">Hizmetlerimiz</a></li>
+                <li><a href="#" class="py-2 d-block">Şartlar & Koşullar</a></li>
+                <li><a href="#" class="py-2 d-block">İş Birliği</a></li>
+                <li><a href="#" class="py-2 d-block">En İyi Fiyat Garantisi</a></li>
+                <li><a href="#" class="py-2 d-block">Gizlilik Politikası</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Destek</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">S.S.S</a></li>
+                <li><a href="#" class="py-2 d-block">Ödeme Seçenekleri</a></li>
+                <li><a href="#" class="py-2 d-block">Rezervasyon İpuçları</a></li>
+                <li><a href="#" class="py-2 d-block">Nasıl Çalışır</a></li>
+                <li><a href="#" class="py-2 d-block">İletişim</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Soru ve Önerileriniz İçin</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">Kocaeli Üniversitesi Umuttepe Yerleşkesi, Kocaeli, Türkiye</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">0262 222 22 22</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@rotiva.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tüm Hakları Saklıdır | Rotiva – Türkiye’nin Tatil & Turizm Rehberi <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>

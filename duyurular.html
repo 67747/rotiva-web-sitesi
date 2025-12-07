@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <title>Rotiva – Duyurular</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Alex+Brush" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+      .duyuru-tarih {
+        font-size: 13px;
+        color: #888;
+        margin-bottom: 5px;
+        display: block;
+      }
+
+      .filter-box {
+        margin-bottom: 25px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+      }
+    </style>
+
+  </head>
+
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Rotiva</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav">
+      <span class="oi oi-menu"></span> Menu
+    </button>
+
+    <div class="collapse navbar-collapse" id="ftco-nav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item"><a href="index.html" class="nav-link">Anasayfa</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">Hakkımızda</a></li>
+        <li class="nav-item"><a href="tour.html" class="nav-link">Turlar</a></li>
+        <li class="nav-item"><a href="hotel.html" class="nav-link">Oteller</a></li>
+        <li class="nav-item active"><a href="duyurular.html" class="nav-link">Duyurular</a></li>
+        <li class="nav-item"><a href="blog.html" class="nav-link">Gezi Yazıları</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">İletişim</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="hero-wrap js-fullheight" style="background-image: url('images/bg_2.jpg');">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+      <div class="col-md-9 ftco-animate text-center">
+        <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Anasayfa</a></span> <span>Duyurular</span></p>
+        <h1 class="mb-3 bread">Duyurular & Kampanyalar</h1>
+      </div>
+    </div>
+  </div>
+</div>
+
+<section class="ftco-section">
+  <div class="container">
+
+    <div class="filter-box">
+      <input type="checkbox" id="filter-guncel">
+      <label for="filter-guncel"><strong>Sadece güncel kampanyaları göster</strong></label>
+    </div>
+
+    <div class="row" id="duyurular-listesi">
+
+      <div class="col-md-4 ftco-animate duyuru" data-date="2025-02-01">
+        <div class="destination" data-toggle="modal" data-target="#duyuru5">
+          <a class="img img-2 d-flex justify-content-center align-items-center" 
+             style="background-image: url('images/ramazanbayramı.jpg');">
+            <div class="icon d-flex justify-content-center align-items-center"><span class="icon-search2"></span></div>
+          </a>
+          <div class="text p-3">
+            <span class="duyuru-tarih">01 Şubat 2025</span>
+            <h3>Ramazan Bayramı Tatil Paketi</h3>
+            <p>Bayrama özel 3 ve 4 gecelik konaklama fırsatları.</p>
+            <p class="bottom-area d-flex">
+              <span><i class="icon-gift"></i> Bayram</span>
+              <span class="ml-auto"><a href="#" data-toggle="modal" data-target="#duyuru5">İncele</a></span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 ftco-animate duyuru" data-date="2024-11-20">
+        <div class="destination" data-toggle="modal" data-target="#duyuru1">
+          <a class="img img-2 d-flex justify-content-center align-items-center" 
+             style="background-image: url('images/erken-rezervasyon-kampanya.jpg');">
+            <div class="icon d-flex justify-content-center align-items-center"><span class="icon-search2"></span></div>
+          </a>
+          <div class="text p-3">
+            <span class="duyuru-tarih">20 Kasım 2024</span>
+            <h3>Erken Rezervasyon %30 İndirim</h3>
+            <p>Mart ayına özel büyük indirim fırsatı!</p>
+            <p class="bottom-area d-flex">
+              <span><i class="icon-tag"></i> Kampanya</span>
+              <span class="ml-auto"><a href="#" data-toggle="modal" data-target="#duyuru1">İncele</a></span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 ftco-animate duyuru" data-date="2024-08-10">
+        <div class="destination" data-toggle="modal" data-target="#duyuru6">
+          <a class="img img-2 d-flex justify-content-center align-items-center" 
+             style="background-image: url('images/karadeniz-festivali.jpg');">
+            <div class="icon d-flex justify-content-center align-items-center"><span class="icon-search2"></span></div>
+          </a>
+          <div class="text p-3">
+            <span class="duyuru-tarih">10 Ağustos 2024</span>
+            <h3>Karadeniz Yayla Festivali Turu</h3>
+            <p>Ayder & Uzungöl festival programı.</p>
+            <p class="bottom-area d-flex">
+              <span><i class="icon-map"></i> Karadeniz</span>
+              <span class="ml-auto"><a href="#" data-toggle="modal" data-target="#duyuru6">İncele</a></span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 ftco-animate duyuru" data-date="2024-06-15">
+        <div class="destination" data-toggle="modal" data-target="#duyuru3">
+          <a class="img img-2 d-flex justify-content-center align-items-center" 
+             style="background-image: url('images/Ege.jpg');">
+            <div class="icon d-flex justify-content-center align-items-center"><span class="icon-search2"></span></div>
+          </a>
+          <div class="text p-3">
+            <span class="duyuru-tarih">15 Haziran 2024</span>
+            <h3>Akdeniz Koyları Yaz Kampanyası</h3>
+            <p>Seçili teknelerde %25 indirim fırsatı!</p>
+            <p class="bottom-area d-flex">
+              <span><i class="icon-sun-o"></i> Yaz Kampanyası</span>
+              <span class="ml-auto"><a href="#" data-toggle="modal" data-target="#duyuru3">İncele</a></span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 ftco-animate duyuru" data-date="2024-05-01">
+        <div class="destination" data-toggle="modal" data-target="#duyuru4">
+          <a class="img img-2 d-flex justify-content-center align-items-center" 
+             style="background-image: url('images/ogrenci.jpg');">
+            <div class="icon d-flex justify-content-center align-items-center"><span class="icon-search2"></span></div>
+          </a>
+          <div class="text p-3">
+            <span class="duyuru-tarih">01 Mayıs 2024</span>
+            <h3>Öğrenci Tatil Fırsatları</h3>
+            <p>Öğrencilere özel indirimler.</p>
+            <p class="bottom-area d-flex">
+              <span><i class="icon-graduation-cap"></i> Öğrenci</span>
+              <span class="ml-auto"><a href="#" data-toggle="modal" data-target="#duyuru4">İncele</a></span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 ftco-animate duyuru" data-date="2024-04-10">
+        <div class="destination" data-toggle="modal" data-target="#duyuru2">
+          <a class="img img-2 d-flex justify-content-center align-items-center" 
+             style="background-image: url('images/Dream Balcony.jpg');">
+            <div class="icon d-flex justify-content-center align-items-center"><span class="icon-search2"></span></div>
+          </a>
+          <div class="text p-3">
+            <span class="duyuru-tarih">10 Nisan 2024</span>
+            <h3>Balayı Çiftlerine Özel Paket</h3>
+            <p>Romantik tatil fırsatları.</p>
+            <p class="bottom-area d-flex">
+              <span><i class="icon-heart"></i> Özel Paket</span>
+              <span class="ml-auto"><a href="#" data-toggle="modal" data-target="#duyuru2">İncele</a></span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script>
+  const filterBox = document.getElementById("filter-guncel");
+  const duyurular = document.querySelectorAll(".duyuru");
+
+  filterBox.addEventListener("change", function () {
+    const today = new Date().toISOString().split("T")[0];
+
+    duyurular.forEach(d => {
+      const duyuruDate = d.getAttribute("data-date");
+
+      if (filterBox.checked) {
+        if (duyuruDate < today) {
+          d.style.display = "none";
+        } else {
+          d.style.display = "block";
+        }
+      } else {
+        d.style.display = "block";
+      }
+    });
+  });
+</script>
+<div class="modal fade" id="duyuru1" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content p-4">
+
+      <h3 class="mb-3">Erken Rezervasyon %30 İndirim</h3>
+      <p>Mart ayı boyunca geçerli erken rezervasyon fırsatı ile tüm turlarda %30 indirim!</p>
+
+      <ul>
+        <li>Geçerlilik Tarihi: 1 Mart – 30 Mart</li>
+        <li>Tüm otellerde geçerlidir</li>
+        <li>İptal & değişiklik yapılabilir</li>
+      </ul>
+
+      <p class="mt-3 fw-bold">Dosyalar:</p>
+      <a href="documents/erken-rezervasyon-afiş.jpg" download>Tanıtım Afişi</a><br>
+      <a href="documents/erken-rezervasyon-kosullari.pdf" download>Kampanya Koşulları</a><br>
+      <a href="documents/indirim.docx" download>Detaylı Bilgi</a>
+
+      <button class="btn btn-primary mt-3" data-dismiss="modal">Kapat</button>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="duyuru2" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content p-4">
+
+      <h3 class="mb-3">Balayı Çiftlerine Özel Tatil Paketi</h3>
+      <p>Yeni evlenen çiftler için romantik oda süslemesi ve özel fiyat fırsatları.</p>
+
+      <ul>
+        <li>Oda süslemesi</li>
+        <li>Balayı kahvaltısı</li>
+        <li>Ücretsiz fotoğraf çekimi</li>
+      </ul>
+
+      <p class="mt-3 fw-bold">Dosyalar:</p>
+      <a href="documents/sunu.pdf" download>Görsellerle İnceleyin</a><br>
+      <a href="documents/balayısı.pdf" download>Balayı Paketi</a><br>
+      <a href="documents/bal.docx" download>Paket İçeriği</a>
+
+      <button class="btn btn-primary mt-3" data-dismiss="modal">Kapat</button>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="duyuru3" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content p-4">
+
+      <h3 class="mb-3">Akdeniz Koyları Yaz Kampanyası</h3>
+      <p>Akdeniz’in en güzel koylarında özel yaz kampanyası!</p>
+
+      <ul>
+        <li>Tekne turunda %25 indirim</li>
+        <li>3 gece üzeri konaklama fırsatları</li>
+        <li>Özel transfer hizmeti</li>
+      </ul>
+
+      <p class="mt-3 fw-bold">Dosyalar:</p>
+      <a href="documents/teknetatili.png" download>Kampanya Afişi</a><br>
+      <a href="documents/akdenizkampanya.pdf" download> Kampanya Detayları</a><br>
+      <a href="documents/kampanyaakdeniz.docx" download>Katılım Koşulları</a>
+
+      <button class="btn btn-primary mt-3" data-dismiss="modal">Kapat</button>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="duyuru4" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content p-4">
+
+      <h3 class="mb-3">Öğrenci Tatil Fırsatları</h3>
+      <p>Lise ve üniversite öğrencilerine özel indirimli tatil paketlerimiz burada!</p>
+
+      <ul>
+        <li>Bütçe dostu konaklama seçenekleri</li>
+        <li>Arkadaş gruplarına özel indirimler</li>
+        <li>Festival dönemlerinde ekstra avantaj</li>
+      </ul>
+
+      <p class="mt-3 fw-bold">Dosyalar:</p>
+      <a href="documents/ogrenciAfişi.png">Tanıtım Afişi</a><br>
+      <a href="documents/ögrenciindirimi.pdf">Öğrenci Paketleri Listesi</a><br>
+      <a href="documents/ögrencifırastı.docx">Katılım Şartları</a>
+
+      <button class="btn btn-primary mt-3" data-dismiss="modal">Kapat</button>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="duyuru5" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content p-4">
+
+      <h3 class="mb-3">Ramazan Bayramı Tatil Paketi</h3>
+      <p>Bayrama özel 3 ve 4 gecelik konaklama paketleri;</p>
+
+      <ul>
+        <li>Açık büfe bayram yemekleri</li>
+        <li>Gala gecesi</li>
+        <li>Bayram eğlenceleri</li>
+      </ul>
+
+      <p class="mt-3 fw-bold">Dosyalar:</p>
+      <a href="documents/Ramazan-Afiş.png">Tatil Afişi</a><br>
+      <a href="documents/ramazan.pdf">Bayram Tur Programı</a><br>
+      <a href="documents/ramazanpaketi.docx">Fiyat Listesi</a>
+
+      <button class="btn btn-primary mt-3" data-dismiss="modal">Kapat</button>
+
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="duyuru6" tabindex="-1">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content p-4">
+
+      <h3 class="mb-3">Karadeniz Yayla Festivali Turu</h3>
+      <p>Ayder, Uzungöl ve diğer yaylaları kapsayan özel festival turu.</p>
+
+      <ul>
+        <li>Rehberli yayla turları</li>
+        <li>Festival alanına giriş</li>
+        <li>Fotoğraf & video çekimi</li>
+      </ul>
+
+      <p class="mt-3 fw-bold">Dosyalar:</p>
+      <a href="images/docsduyurularkaradeniz-yayla-gorselleri.jpg">Festival Afişi</a><br>
+      <a href="documents/karadeniz-festival-program.pdf">Tur Programı</a><br>
+      <a href="documents/karadeniz-fiyat-listesi.docx">Fiyat Listesi</a>
+
+      <button class="btn btn-primary mt-3" data-dismiss="modal">Kapat</button>
+
+    </div>
+  </div>
+</div>
+<footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Rotiva</h2>
+              <p>Türkiye’nin dört bir yanındaki şehirleri, otelleri ve rotaları keşfetmen için yanındayız. Hayalindeki tatili planlamayı kolaylaştırıyoruz.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">Bilgiler</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">Hakkımızda</a></li>
+                <li><a href="#" class="py-2 d-block">Hizmetlerimiz</a></li>
+                <li><a href="#" class="py-2 d-block">Şartlar & Koşullar</a></li>
+                <li><a href="#" class="py-2 d-block">İş Birliği</a></li>
+                <li><a href="#" class="py-2 d-block">En İyi Fiyat Garantisi</a></li>
+                <li><a href="#" class="py-2 d-block">Gizlilik Politikası</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Destek</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">S.S.S</a></li>
+                <li><a href="#" class="py-2 d-block">Ödeme Seçenekleri</a></li>
+                <li><a href="#" class="py-2 d-block">Rezervasyon İpuçları</a></li>
+                <li><a href="#" class="py-2 d-block">Nasıl Çalışır</a></li>
+                <li><a href="#" class="py-2 d-block">İletişim</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Soru ve Önerileriniz İçin</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">Kocaeli Üniversitesi Umuttepe Yerleşkesi, Kocaeli, Türkiye</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">0262 222 22 22</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@rotiva.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script> Tüm Hakları Saklıdır | Rotiva – Türkiye’nin Tatil & Turizm Rehberi <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/jquery.timepicker.min.js"></script>
+<script src="js/scrollax.min.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

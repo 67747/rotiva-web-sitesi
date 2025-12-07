@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <title>Rotiva – Yönetim Paneli</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+      .hero-admin {
+        background-image: url("images/bg_2.jpg");
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        min-height: 600px;         
+        padding-top: 120px;        
+      }
+      .hero-admin .overlay {
+        position: absolute;
+        inset: 0;
+        background: rgba(0,0,0,0.45);
+      }
+      .hero-admin .content {
+        position: relative;
+        z-index: 2;
+        text-align: center;
+      }
+      .hero-admin h1 {
+        color:#fff;
+        font-size: 46px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+      .hero-admin p {
+        color:#f1f1f1;
+        font-size:16px;
+        margin-bottom: 0;
+      }
+
+      .hero-breadcrumb {
+        display: inline-block;
+        color: #ffdede;
+        font-size: 14px;
+        margin-bottom: 8px;
+        width: 100%;
+        margin-left: 100px;
+      }
+      .hero-breadcrumb a {
+        color: #ffe1e1;
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+  <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+  <div class="container justify-content-center">
+    <a class="navbar-brand d-none d-lg-block mr-4" href="index.html">Rotiva</a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+            aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="oi oi-menu"></span> Menu
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="ftco-nav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="index.html" class="nav-link">Anasayfa</a>
+        </li>
+        <li class="nav-item active">
+          <a href="admin.html" class="nav-link">Yönetim Paneli</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  <section class="hero-admin">
+    <div class="overlay"></div>
+    <div class="container h-100">
+      <div class="row no-gutters align-items-center justify-content-center h-100">
+        <div class="col-md-10 text-center content">
+        <div class="col-md-10 text-center"></div>
+          <h1 class="mb-3">Rotiva Yönetim Paneli</h1>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ftco-section ftco-degree-bg">
+    <div class="container">
+
+      <ul class="nav nav-pills mb-4 justify-content-center" id="adminTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" id="duyuru-tab" data-toggle="pill" href="#duyuru" role="tab">Duyuru Yönetimi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="tur-tab" data-toggle="pill" href="#tur" role="tab">Tur Yönetimi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="otel-tab" data-toggle="pill" href="#otel" role="tab">Otel Yönetimi</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="gezi-tab" data-toggle="pill" href="#gezi" role="tab">Gezi Yazıları</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" id="istatistik-tab" data-toggle="pill" href="#istatistik" role="tab">İstatistikler</a>
+        </li>
+      </ul>
+
+      <div class="tab-content" id="adminTabContent">
+
+        <div class="tab-pane fade show active" id="duyuru" role="tabpanel" aria-labelledby="duyuru-tab">
+          <div class="admin-card">
+            <h3 class="admin-section-title">Duyuru / Kampanya Ekle</h3>
+    
+            <form onsubmit="demoSave(event)">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label>Duyuru Başlığı</label>
+                  <input type="text" class="form-control" placeholder="Örn: Erken Rezervasyon %30 İndirim">
+                </div>
+                <div class="form-group col-md-3">
+                  <label>Yayın Tarihi</label>
+                  <input type="date" class="form-control">
+                </div>
+                <div class="form-group col-md-3">
+                  <label>Kategori</label>
+                  <select class="form-control">
+                    <option>Kampanya</option>
+                    <option>Duyuru</option>
+                    <option>Özel Paket</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Kısa Açıklama</label>
+                <textarea class="form-control" rows="3" placeholder="Anasayfada kart üzerinde görünecek özet metin"></textarea>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label>Kapak Görseli (dosya yolu)</label>
+                  <input type="text" class="form-control" placeholder="images/erken-rezervasyon-kampanya.jpg">
+                </div>
+                <div class="form-group col-md-6">
+                  <label>Modal İçin Büyük Görsel (dosya yolu)</label>
+                  <input type="text" class="form-control" placeholder="images/erken-rezervasyon-afis.jpg">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-md-4">
+                  <label>PDF Dosyası</label>
+                  <input type="text" class="form-control" placeholder="documents/kosullar.pdf">
+                </div>
+                <div class="form-group col-md-4">
+                  <label>Word Dosyası</label>
+                  <input type="text" class="form-control" placeholder="documents/detaylar.docx">
+                </div>
+                <div class="form-group col-md-4">
+                  <label>Görsel / Afiş</label>
+                  <input type="text" class="form-control" placeholder="documents/afis.jpg">
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary px-4">Duyuruyu Kaydet</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="tur" role="tabpanel" aria-labelledby="tur-tab">
+          <div class="admin-card">
+            <h3 class="admin-section-title">Tur Ekle / Düzenle</h3>
+
+            <form onsubmit="demoSave(event)">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label>Tur Başlığı</label>
+                  <input type="text" class="form-control" placeholder="Örn: Kapadokya Balon Turu">
+                </div>
+                <div class="form-group col-md-3">
+                  <label>Lokasyon</label>
+                  <input type="text" class="form-control" placeholder="Nevşehir, Kapadokya">
+                </div>
+                <div class="form-group col-md-3">
+                  <label>Fiyat (TL)</label>
+                  <input type="number" class="form-control" placeholder="4500">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-md-4">
+                  <label>Süre</label>
+                  <input type="text" class="form-control" placeholder="2 gün 1 gece">
+                </div>
+                <div class="form-group col-md-4">
+                  <label>Tur Tipi</label>
+                  <select class="form-control">
+                    <option>Kültür Turu</option>
+                    <option>Yurtiçi Tatil</option>
+                    <option>Yurtdışı Tatil</option>
+                    <option>Balayı</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-4">
+                  <label>Puan (0–5)</label>
+                  <input type="number" step="0.1" min="0" max="5" class="form-control" placeholder="4.8">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Kısa Açıklama</label>
+                <textarea class="form-control" rows="3" placeholder="Tur kartında görünecek özet açıklama"></textarea>
+              </div>
+
+              <div class="form-group">
+                <label>Kapak Fotoğrafı (dosya yolu)</label>
+                <input type="text" class="form-control" placeholder="images/tour-1.jpg">
+              </div>
+
+              <button type="submit" class="btn btn-primary px-4">Turu Kaydet</button>
+            </form>
+          </div>
+        </div>
+
+
+        <div class="tab-pane fade" id="otel" role="tabpanel" aria-labelledby="otel-tab">
+          <div class="admin-card">
+            <h3 class="admin-section-title">Otel Ekle / Düzenle</h3>
+
+            <form onsubmit="demoSave(event)">
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label>Otel Adı</label>
+                  <input type="text" class="form-control" placeholder="Örn: İstanbul City Hotel">
+                </div>
+                <div class="form-group col-md-3">
+                  <label>Şehir / Bölge</label>
+                  <input type="text" class="form-control" placeholder="İstanbul">
+                </div>
+                <div class="form-group col-md-3">
+                  <label>Gecelik Fiyat (TL)</label>
+                  <input type="number" class="form-control" placeholder="1200">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-md-4">
+                  <label>Konsept</label>
+                  <select class="form-control">
+                    <option>Her Şey Dahil</option>
+                    <option>Oda & Kahvaltı</option>
+                    <option>Yarım Pansiyon</option>
+                    <option>Sadece Oda</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-4">
+                  <label>Puan (0–5)</label>
+                  <input type="number" step="0.1" min="0" max="5" class="form-control" placeholder="4.5">
+                </div>
+                <div class="form-group col-md-4">
+                  <label>Kapak Fotoğrafı (dosya yolu)</label>
+                  <input type="text" class="form-control" placeholder="images/hotel-1.jpg">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Kısa Açıklama</label>
+                <textarea class="form-control" rows="3" placeholder="Otel kartı altındaki açıklama metni"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary px-4">Oteli Kaydet</button>
+            </form>
+          </div>
+        </div>
+
+
+        <div class="tab-pane fade" id="gezi" role="tabpanel" aria-labelledby="gezi-tab">
+          <div class="admin-card">
+            <h3 class="admin-section-title">Gezi Yazısı Ekle / Düzenle</h3>
+
+            <form onsubmit="demoSave(event)">
+              <div class="form-row">
+                <div class="form-group col-md-8">
+                  <label>Yazı Başlığı</label>
+                  <input type="text" class="form-control" placeholder="Örn: İlk Defa Kapadokya’ya Gidenler İçin 7 Altın Tavsiye">
+                </div>
+                <div class="form-group col-md-4">
+                  <label>Yayın Tarihi</label>
+                  <input type="date" class="form-control">
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-md-4">
+                  <label>Kategori</label>
+                  <select class="form-control">
+                    <option>İpucu</option>
+                    <option>Seyahat</option>
+                    <option>Kapadokya</option>
+                    <option>Türkiye</option>
+                    <option>Şehir Rehberi</option>
+                  </select>
+                </div>
+                <div class="form-group col-md-4">
+                  <label>Yazar Adı</label>
+                  <input type="text" class="form-control" placeholder="Rotiva Ekibi">
+                </div>
+                <div class="form-group col-md-4">
+                  <label>Yazar Fotoğrafı (dosya yolu)</label>
+                  <input type="text" class="form-control" placeholder="images/author-rotiva.jpg">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Kısa Özet (Kartta Görünecek Metin)</label>
+                <textarea class="form-control" rows="3" placeholder="Kapadokya’ya ilk kez gidiyorsan, bu yazıda senin için hazırladığımız altın tavsiyelere mutlaka göz at..."></textarea>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label>Kapak Fotoğrafı (Hero / Üst Görsel)</label>
+                  <input type="text" class="form-control" placeholder="images/kapadokya-cover.jpg">
+                </div>
+                <div class="form-group col-md-6">
+                  <label>İç Sayfa Büyük Fotoğraf</label>
+                  <input type="text" class="form-control" placeholder="images/kapadokya-detay.jpg">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>İçerik (Yazının Başlangıcı)</label>
+                <textarea class="form-control" rows="5" placeholder="Kapadokya, Türkiye’de mutlaka görülmesi gereken en özel rotalardan biri..."></textarea>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group col-md-8">
+                  <label>Etiketler (virgülle ayır)</label>
+                  <input type="text" class="form-control" placeholder="kapadokya, ipucu, seyahat, balon turları">
+                </div>
+                <div class="form-group col-md-4 d-flex align-items-center">
+                  <div class="form-check mt-4">
+                    <input class="form-check-input" type="checkbox" id="featuredPost">
+                    <label class="form-check-label" for="featuredPost">
+                      Bu yazıyı anasayfada öne çıkar
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <button type="submit" class="btn btn-primary px-4">Gezi Yazısını Kaydet</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="tab-pane fade" id="istatistik" role="tabpanel" aria-labelledby="istatistik-tab">
+          <div class="admin-card">
+            <h3 class="admin-section-title">İstatistikleri Güncelle</h3>
+            
+            <form onsubmit="demoSave(event)">
+              <div class="form-row">
+                <div class="form-group col-md-3">
+                  <label>Mutlu Kullanıcı</label>
+                  <input type="number" class="form-control" placeholder="100000">
+                </div>
+                <div class="form-group col-md-3">
+                  <label>Tatil Rotası</label>
+                  <input type="number" class="form-control" placeholder="40000">
+                </div>
+                <div class="form-group col-md-3">
+                  <label>Otel Sayısı</label>
+                  <input type="number" class="form-control" placeholder="87000">
+                </div>
+                <div class="form-group col-md-3">
+                  <label>Restoran Sayısı</label>
+                  <input type="number" class="form-control" placeholder="56400">
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label>Not / Açıklama</label>
+                <textarea class="form-control" rows="3" placeholder="Örn: Bu veriler 2024–2025 tahmini istatistiklerine dayanır."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary px-4">İstatistikleri Kaydet</button>
+            </form>
+          </div>
+        </div> 
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="ftco-footer ftco-bg-dark ftco-section">
+      <div class="container">
+        <div class="row mb-5">
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Rotiva</h2>
+              <p>Türkiye’nin dört bir yanındaki şehirleri, otelleri ve rotaları keşfetmen için yanındayız. Hayalindeki tatili planlamayı kolaylaştırıyoruz.</p>
+              <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
+                <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
+                <li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4 ml-md-5">
+              <h2 class="ftco-heading-2">Bilgiler</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">Hakkımızda</a></li>
+                <li><a href="#" class="py-2 d-block">Hizmetlerimiz</a></li>
+                <li><a href="#" class="py-2 d-block">Şartlar ve Koşullar</a></li>
+                <li><a href="#" class="py-2 d-block">İşbirliği</a></li>
+                <li><a href="#" class="py-2 d-block">En İyi Fiyat Garantisi</a></li>
+                <li><a href="#" class="py-2 d-block">Gizlilik Politikası</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+             <div class="ftco-footer-widget mb-4">
+              <h2 class="ftco-heading-2">Destek</h2>
+              <ul class="list-unstyled">
+                <li><a href="#" class="py-2 d-block">S.S.S</a></li>
+                <li><a href="#" class="py-2 d-block">Ödeme Seçenekleri</a></li>
+                <li><a href="#" class="py-2 d-block">Rezervasyon İpuçları</a></li>
+                <li><a href="#" class="py-2 d-block">Nasıl Çalışır</a></li>
+                <li><a href="#" class="py-2 d-block">İletişim</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="ftco-footer-widget mb-4">
+            	<h2 class="ftco-heading-2">Soru ve Önerileriniz İçin</h2>
+            	<div class="block-23 mb-3">
+	              <ul>
+	                <li><span class="icon icon-map-marker"></span><span class="text">Kocaeli Üniversitesi Umuttepe Yerleşkesi, Kocaeli, Türkiye</span></li>
+	                <li><a href="#"><span class="icon icon-phone"></span><span class="text">0262 222 22 22</span></a></li>
+	                <li><a href="#"><span class="icon icon-envelope"></span><span class="text">info@rotiva.com</span></a></li>
+	              </ul>
+	            </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12 text-center">
+
+            <p>
+  Copyright &copy;<script>document.write(new Date().getFullYear());</script>  Tüm Hakları Saklıdır | Rotiva – Türkiye’nin Tatil & Turizm Rehberi <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+  </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+  <script src="js/google-map.js"></script>
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
